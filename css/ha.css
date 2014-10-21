@@ -1,0 +1,115 @@
+body{
+    min-width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+#code{
+	position: absolute;    
+	min-height: 85%;
+	margin-top:100px;
+	top:0px;
+	left:0px;
+	right:220px;
+	bottom:0px;
+}
+.ram-url{
+	float:right;
+}
+header{
+	position: absolute;
+    min-width: 100%;
+	min-height: 100px;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	padding: 10px 20px;
+}
+h2{
+	margin-top:0px;
+}
+header .button-run{
+	float:left;
+	width: 250px;
+}
+header .button-run-addon{
+	padding: 0 5px;
+}
+
+#register{
+	position: absolute;
+	min-height: 85%;
+	height: 85%;
+	top: 100px;
+	z-index: 5;
+	width: 220px;
+	right: 0;
+	background: white;
+	padding:5px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.register-button{
+	margin-bottom: 10px;
+}
+.register-button button{
+	margin-right: 5px;
+}
+.ace_marker-layer .ace_exec, .ace_editor .active{
+	background: rgba(250, 250, 210, 0.3) !important;
+    position: absolute;
+    width: 100% !important;
+    left: 0 !important;
+	z-index: 100;
+}
+.ace_marker-layer .ace_error, .error{
+	background: rgba(255, 50, 50, 0.3) !important;
+    position: absolute;
+    width: 100% !important;
+    left: 0 !important;
+	z-index: 100;
+}
+.reg-green{
+	background: rgba(0, 255, 0, 0.3) !important;
+}
+.reg-red{
+	background: rgba(255, 9, 0, 0.3) !important;
+}
+.reg-yellow{
+	background: rgba(250, 250, 0, 0.7) !important;
+}
+.rowNo{
+	display: inline-block;
+	min-width: 25px;
+	background-color: #ccc;
+	text-align: right;
+	padding: 0 5px;
+	margin: 0 5px 0 0;
+}
+
+.ace_gutter-cell.ace_breakpoint{ 
+    border-radius: 20px 0px 0px 20px; 
+    box-shadow: 0px 0px 1px 1px red inset; 
+}
+
+#msg{
+	position: absolute;
+	top:110px;
+	left:25%;
+	right:25%;
+	z-index: 1000;
+	display:none;
+}
+
+.modal-dialog{
+	width:90%;
+}
+.tab-content .tab-pane{
+	height: 80%;
+	min-height: 80%;
+	overflow-y:auto;
+	overflow-x:none;
+	position: relative;
+	background: transparent !important;
+	padding: 10px;
+}
