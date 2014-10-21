@@ -45,7 +45,7 @@ jQuery(document).ready(function(){
 		
 		var sum = aggregatedLKM(PRM);
 		//GOTO delivers a NaN or HALT also.
-		if(!isNaN(sum) && isFinite(sum) && sum != 0){			
+		if(!isNaN(sum) && isFinite(sum) && sum > 0){			
 			jQuery('#ram_lkm').val(Number(jQuery('#ram_lkm').val())+Math.ceil(Math.log(sum)/Math.log(2)));
 		}
 	});
@@ -491,7 +491,7 @@ function parser(code, label){
 								}
 								val = Number((Number(PRM[1]) / Number(PRM[3])).toFixed(0));
 							}
-							if(!(Number.isFinite(val))){
+							if(!isFinite(val)){
 								RAM = displayError(RAM, 'Overflow occurred. Please notice the valid number range is '+Number.MIN_VALUE+' to '+Number.MAX_VALUE+'.');
 							}
 							else{

@@ -226,10 +226,10 @@ Copyright (c) 2013 Simon Gene Gottlieb, Simon Koennecke
 </div>
 </header>
 <div class="input">
-<div id="code">; R0 = mantissa
+<div id="code">; R0 = base
 ; R1 = exponent
 GZ R1, exp_zero ;if R0^0 goto this special case
-R2 = R0 ;remember the mantissa for every iteration
+R2 = R0 ;remember the base for every iteration
 R1 = R1 - 1 ;decrease the counter, because the loop should run only R1 times.
 while: GZ R1, ende ;loop until R1 is zero
 R0 = R0 * R2 ;multiply the current value with the start value of R0
