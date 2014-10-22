@@ -74,7 +74,7 @@ jQuery(document).ready(function(){
 function getLink(){
 	var data = loadRegister().join(";");
 	var code = editor.getSession().getValue();
-	var url = document.URL.substr(0,(((c= document.URL.indexOf('?'))===-1)?document.URL.length:c))+'?reg='+data+'&code='+escape(code);
+	var url = document.URL.substr(0,(((c= document.URL.indexOf('?'))===-1)?document.URL.length:c))+'#reg='+data+'&code='+escape(code);
 	jQuery('#ram_url input').attr('value', url);
 	alertMsg(jQuery('#ram_url').html(), 'alert-warning');
 }
@@ -691,7 +691,7 @@ function aggregatedLKM(val1, val2){
 
 //HELPER
 function GetURLParameter(sParam){
-    var sPageURL = window.location.search.substring(1);
+    var sPageURL = window.location.hash.substring(1);
     var sURLVariables = sPageURL.split('&');
     for (var i = 0; i < sURLVariables.length; i++) 
     {
