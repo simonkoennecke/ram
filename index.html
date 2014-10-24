@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
        "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html manifest="ram.appcache">
 <head>
 	<title>Random Access Machine Emulator (by Simon Gottlieb and Simon Koennecke)</title>
 	<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
@@ -164,14 +164,14 @@ To complete the RAM successfully it needs to end with a HALT command.
 		<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#105;&#109;&#111;&#110;&#107;&#111;&#101;&#110;&#110;&#101;&#99;&#107;&#101;&#43;&#114;&#97;&#109;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;?Subject=RAM%20Emulator%20Sample%20Code" target="_blank">Please send us your RAM Code of an interesting algorithm.</a>
 		</p><p>Examples:</p>
 		<ul>
-			<li><a href="http://farbtrommel.de/ram/?reg=0;3;0&code=%3BThis%20programm%20runs%20a%20loop%2010%20times%0AR0%20%3D%2010%0Aloop%3A%0A%3B%20This%20lines%20beeing%20executed%2010%20times%0AR0%20%3D%20R0%20-%201%0AGGZ%20R0%2C%20loop%0AHALT" target="_blank">Simple Loop</a>
+			<li><a href=#reg=0;3;0&code=%3BThis%20programm%20runs%20a%20loop%2010%20times%0AR0%20%3D%2010%0Aloop%3A%0A%3B%20This%20lines%20beeing%20executed%2010%20times%0AR0%20%3D%20R0%20-%201%0AGGZ%20R0%2C%20loop%0AHALT" target="_blank">Simple Loop</a>
 </li>
 <li>
-<a href="http://farbtrommel.de/ram/?reg=10;3;2;3;2;3;2;3;2;3;2&code=%3B%20Simple%20programm%20to%20fill%20R1-R10%20with%20zeros%0A%0Aloop%3A%20GZ%20R0%2C%20end%0A%28R0%29%20%3D%200%0AR0%20%3D%20R0%20-%201%0AGOTO%20loop%0A%0Aend%3A%0AHALT" target="_blank">Fill Register 1-10 with zeros</a>
+<a href="#reg=10;3;2;3;2;3;2;3;2;3;2&code=%3B%20Simple%20programm%20to%20fill%20R1-R10%20with%20zeros%0A%0Aloop%3A%20GZ%20R0%2C%20end%0A%28R0%29%20%3D%200%0AR0%20%3D%20R0%20-%201%0AGOTO%20loop%0A%0Aend%3A%0AHALT" target="_blank">Fill Register 1-10 with zeros</a>
 </li><li>
-<a href="http://farbtrommel.de/ram/?reg=10;3;2;3;2;3;2;3;2;3;2&code=%3B%20Calculates%20sum%20of%20R1%20-%20R10%20and%20saves%20it%20in%20R1%0A%0Aloop%3A%0AR1%20%3D%20R1%20+%20%28R0%29%0AR0%20%3D%20R0%20-%201%0AGGZ%20R0%2C%20loop%0A%0AR1%20%3D%20R1%20/%202%0AHALT" target="_blank">Calculate sum of Register 1-10</a></li>
+<a href="#reg=10;3;2;3;2;3;2;3;2;3;2&code=%3B%20Calculates%20sum%20of%20R1%20-%20R10%20and%20saves%20it%20in%20R1%0A%0Aloop%3A%0AR1%20%3D%20R1%20+%20%28R0%29%0AR0%20%3D%20R0%20-%201%0AGGZ%20R0%2C%20loop%0A%0AR1%20%3D%20R1%20/%202%0AHALT" target="_blank">Calculate sum of Register 1-10</a></li>
 			<li>
-			<a href="http://farbtrommel.de/ram/?reg=1;161604;0&code=%3B%20A%20very%20simple%20GOTO%20use%20case%0AR0%20%3D%201%0AGOTO%20l1%0A%0A%0Al1%3A%20R1%20%3D%20R1%20+%201%0AGOTO%20l6%0Al2%3A%20R1%20%3D%20R1%20*%20R1%0AGOTO%20l5%0Al3%3A%0AHALT%20%20%0Al5%3A%20R1%20%3D%20R1%20+%202%0AGOTO%20l4%0Al6%3A%20R1%20%3D%20R1%20*%205%0AGOTO%20l2%0Al4%3A%20R1%20%3D%20R1%20*%20R1%0AGOTO%20l3%0A%0A%3Bplease%20don%27t%20write%20your%20code%20like%20this%20%3A-%28" target="_blank">Simple GOTO example</a>
+			<a href="#reg=1;161604;0&code=%3B%20A%20very%20simple%20GOTO%20use%20case%0AR0%20%3D%201%0AGOTO%20l1%0A%0A%0Al1%3A%20R1%20%3D%20R1%20+%201%0AGOTO%20l6%0Al2%3A%20R1%20%3D%20R1%20*%20R1%0AGOTO%20l5%0Al3%3A%0AHALT%20%20%0Al5%3A%20R1%20%3D%20R1%20+%202%0AGOTO%20l4%0Al6%3A%20R1%20%3D%20R1%20*%205%0AGOTO%20l2%0Al4%3A%20R1%20%3D%20R1%20*%20R1%0AGOTO%20l3%0A%0A%3Bplease%20don%27t%20write%20your%20code%20like%20this%20%3A-%28" target="_blank">Simple GOTO example</a>
 			</li>
 		</ul>
 	</div>
